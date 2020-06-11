@@ -6,6 +6,7 @@ class CardsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cards
-        fields = ['title',
+        fields = ['id',
+                  'title',
                   'contents',
                   'owner',]

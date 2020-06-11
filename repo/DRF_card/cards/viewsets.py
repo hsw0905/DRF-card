@@ -12,4 +12,4 @@ class CardsViewSet(viewsets.ModelViewSet):
     queryset = Cards.objects.all()
     serializer_class = CardsSerializer
     pagination_class = CustomPagination
-    permission_classes = [IsAuthenticated, IsCardsOwner,]
+    permission_classes = [IsCardsOwner,]
